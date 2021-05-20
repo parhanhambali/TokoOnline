@@ -11,6 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toko Online</title>
+    
+    <link href="<?php echo BASE_URL."css/style.css"; ?>" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <div id="container">
@@ -23,7 +25,7 @@
                     <a href="<?php echo BASE_URL."index.php?page=login"; ?>">Login</a>
                     <a href="<?php echo BASE_URL."index.php?page=register"; ?>">Register</a>
                 </div>
-                <a href="<?php echo BASE_URL."index.php?page=cart"; ?>">
+                <a href="<?php echo BASE_URL."index.php?page=cart"; ?>" id="cart-button">
                     <img src="<?php echo BASE_URL."images/cart.png"; ?>" alt="">
                 </a>
             </div>
