@@ -1,5 +1,5 @@
 <?php 
 
-    define("BASE_URL", "http://localhost/TokoOnline");
+    define("BASE_URL", "http://localhost/TokoOnline/");
 
 ?>
