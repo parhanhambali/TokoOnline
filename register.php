@@ -14,6 +14,8 @@
         // digunakan untuk menampilkan pernyataan bahwa pada form register telah diisi atau belum
         if($notif == "require"){
             echo "<div class='notif'>Lengkapi Data Registrasi Terlebih Dahulu</div>";
+        }elseif($notif == "password"){
+            echo "<div class='notif'>Password yang Di Masukan Salah</div>";
         }
     ?>
 

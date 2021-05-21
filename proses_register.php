@@ -22,6 +22,11 @@
     // digunakan untuk mengecek field yang terdapat pada form registrasi
     if(empty($nama_lengkap) || empty($email) || empty($phone) || empty($alamat) || empty($password)){
         header("location:".BASE_URL."index.php?page=register&notif=require&$dataForm");
+    
+        // Validasi password apakah password sama atau tidak 
+    }elseif($password != $re_password){
+        // header digunakan untuk mengarahkan file ke lokasi yang dituju
+        header("location: ".BASE_URL."index.php?page=register&notif=password&$dataForm");
     }else{
 
     //Koneksi ke tabel user
