@@ -2,6 +2,8 @@
 
     include_once("function/helper.php");
 
+    $page = isset($_GET['page']) ? $_GET['page'] : false;
+
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Online</title>
+    <title>Website Toko Online</title>
     
     <link href="<?php echo BASE_URL."css/style.css"; ?>" type="text/css" rel="stylesheet" />
 </head>
@@ -31,6 +33,15 @@
             </div>
         </div>
         <div id="content">
+            <?php 
+                $filename = "$page.php";
+                
+                if(file_exists($filename)) {
+                    include_once($filename);
+                } else {
+                    echo "File Tidak tersedia";
+                }
+            ?>
             <div id="footer">
                 <p>copyright TokoOnline 2021</p>
             </div>
