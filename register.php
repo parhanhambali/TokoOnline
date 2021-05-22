@@ -16,6 +16,8 @@
             echo "<div class='notif'>Lengkapi Data Registrasi Terlebih Dahulu</div>";
         }elseif($notif == "password"){
             echo "<div class='notif'>Password yang Di Masukan Salah</div>";
+        }elseif($notif == "email"){
+            echo "<div class='notif'>Email yang Di Masukan Telah Terdaftar Sebelumnya</div>";
         }
     ?>
 
